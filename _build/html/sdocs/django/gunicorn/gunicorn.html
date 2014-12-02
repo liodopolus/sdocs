@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gunicorn &mdash; Start</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '0.1.alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Start" href="../../../index.html" />
+    <link rel="up" title="Django" href="../django.html" />
+    <link rel="next" title="Github" href="../../github/github.html" />
+    <link rel="prev" title="Django-Setup" href="../django-setup/django-setup.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../github/github.html" title="Github"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../django-setup/django-setup.html" title="Django-Setup"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../index.html">Start</a> &raquo;</li>
+          <li><a href="../../index_sdocs.html" >Slackwaredocs</a> &raquo;</li>
+          <li><a href="../django.html" accesskey="U">Django</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="gunicorn">
+<h1>Gunicorn<a class="headerlink" href="#gunicorn" title="Permalink to this headline">¶</a></h1>
+<p>I Build your First App with Gunicorn</p>
+<div class="highlight-python"><div class="highlight"><pre>  $ sudo pip install virtualenv
+  $ mkdir ~/environments/
+  $ virtualenv ~/environments/tutorial/
+  $ cd ~/environments/tutorial/
+  $ ls
+  bin  include  lib
+  $ source bin/activate
+  (tutorial) $ pip install gunicorn
+  (tutorial) $ mkdir myapp
+  (tutorial) $ cd myapp/
+  (tutorial) $ vi myapp.py
+  (tutorial) $ cat myapp.py
+
+  def app(environ, start_response):
+      data = &quot;Hello, World!\n&quot;
+      start_response(&quot;200 OK&quot;, [
+      (&quot;Content-Type&quot;, &quot;text/plain&quot;),
+      (&quot;Content-Length&quot;, str(len(data)))
+      ])
+      return iter([data])
+
+  (tutorial) $ ../bin/gunicorn -w 4 myapp:app
+
+2010-06-05 23:27:07 [16800] [INFO] Arbiter booted 
+2010-06-05 23:27:07 [16800] [INFO] Listening at: http://127.0.0.1:8000 
+2010-06-05 23:27:07 [16801] [INFO] Worker spawned (pid: 16801) 
+2010-06-05 23:27:07 [16802] [INFO] Worker spawned (pid: 16802) 
+2010-06-05 23:27:07 [16803] [INFO] Worker spawned (pid: 16803) 
+2010-06-05 23:27:07 [16804] [INFO] Worker spawned (pid: 16804)
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../django-setup/django-setup.html"
+                        title="previous chapter">Django-Setup</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../github/github.html"
+                        title="next chapter">Github</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/sdocs/django/gunicorn/gunicorn.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../github/github.html" title="Github"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../django-setup/django-setup.html" title="Django-Setup"
+             >previous</a> |</li>
+        <li><a href="../../../index.html">Start</a> &raquo;</li>
+          <li><a href="../../index_sdocs.html" >Slackwaredocs</a> &raquo;</li>
+          <li><a href="../django.html" >Django</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jeffrey Scherling.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

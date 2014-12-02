@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gunicorn &mdash; Testproject 0.1.alpha documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Testproject 0.1.alpha documentation" href="index.html" />
+    <link rel="up" title="Setup" href="Setup.html" />
+    <link rel="next" title="Quickstart" href="Quickstart.html" />
+    <link rel="prev" title="Django" href="Django.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Quickstart.html" title="Quickstart"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Django.html" title="Django"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Testproject 0.1.alpha documentation</a> &raquo;</li>
+          <li><a href="Setup.html" accesskey="U">Setup</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="gunicorn">
+<h1>Gunicorn<a class="headerlink" href="#gunicorn" title="Permalink to this headline">¶</a></h1>
+<p>I Build your First App with Gunicorn</p>
+<blockquote>
+<div><p>$ sudo pip install virtualenv
+$ mkdir ~/environments/
+$ virtualenv ~/environments/tutorial/
+$ cd ~/environments/tutorial/
+$ ls
+bin  include  lib
+$ source bin/activate
+(tutorial) $ pip install gunicorn
+(tutorial) $ mkdir myapp
+(tutorial) $ cd myapp/
+(tutorial) $ vi myapp.py
+(tutorial) $ cat myapp.py</p>
+<dl class="docutils">
+<dt>def app(environ, start_response):</dt>
+<dd>data = &#8220;Hello, World!n&#8221;
+start_response(&#8220;200 OK&#8221;, [
+(&#8220;Content-Type&#8221;, &#8220;text/plain&#8221;),
+(&#8220;Content-Length&#8221;, str(len(data)))
+])
+return iter([data])</dd>
+</dl>
+<p>(tutorial) $ ../bin/gunicorn -w 4 myapp:app</p>
+</div></blockquote>
+<p>2010-06-05 23:27:07 [16800] [INFO] Arbiter booted</p>
+<p>2010-06-05 23:27:07 [16800] [INFO] Listening at: <a class="reference external" href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></p>
+<p>2010-06-05 23:27:07 [16801] [INFO] Worker spawned (pid: 16801)</p>
+<p>2010-06-05 23:27:07 [16802] [INFO] Worker spawned (pid: 16802)</p>
+<p>2010-06-05 23:27:07 [16803] [INFO] Worker spawned (pid: 16803)</p>
+<p>2010-06-05 23:27:07 [16804] [INFO] Worker spawned (pid: 16804)</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Django.html"
+                        title="previous chapter">Django</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Quickstart.html"
+                        title="next chapter">Quickstart</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/Gunicorn.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Quickstart.html" title="Quickstart"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Django.html" title="Django"
+             >previous</a> |</li>
+        <li><a href="index.html">Testproject 0.1.alpha documentation</a> &raquo;</li>
+          <li><a href="Setup.html" >Setup</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jeffrey Scherling.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

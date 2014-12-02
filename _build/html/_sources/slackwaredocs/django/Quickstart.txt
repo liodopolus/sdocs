@@ -1,0 +1,15 @@
+**********
+Quickstart
+**********
+
+# Howto Writing Django Apps #
+
+I Prerequisites
+
+1. django+nginx+postgresql+gunicorn
+2. editor vim
+
+
+II Writing you First Django App
+
+1. ???

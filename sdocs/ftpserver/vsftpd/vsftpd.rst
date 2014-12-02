@@ -1,0 +1,36 @@
+Vsftpd
+======
+
+# configuration of vsftpd
+
+http://www.basicconfig.com/linuxnetwork/ftp_server#check-vsftpd
+http://wiki.ubuntuusers.de/vsftpd
+
+
+.. literalinclude::
+        config/vsftpd.conf
+
+# restart the process
+
+root@gamma:~# /etc/rc.d/rc.inetd restart 
+Starting Internet super-server daemon:  /usr/sbin/inetd
+
+
+# customize the login
+
+.. literalinclude::
+        config/vsftpd.banner_file
+
+
+# user who are permitted to login
+
+.. literalinclude::
+        config/vsftpd.user_list
+
+
+# user who login with chroot in a jail
+
+.. literalinclude::
+        config/vsftpd.chroot_list
+
+

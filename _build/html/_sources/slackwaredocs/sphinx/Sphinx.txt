@@ -1,0 +1,21 @@
+*****************
+Sphinx-Quickstart
+*****************
+
+# Sphinx-Quickstart #
+
+I Prerequisites
+
+1. sphinx-quickstart: create the root directory of documentation
+
+
+II Build the documentation
+
+1. do make html, latexpdf or linkcheck
+
+
+III Look at the Documentation
+
+1. add placeholder in index.rst
+2. add content to the files of placeholder
+

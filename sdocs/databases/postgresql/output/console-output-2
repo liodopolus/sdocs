@@ -1,0 +1,5 @@
+root@gamma:~# /etc/rc.d/rc.postgresql start
+Starting PostgreSQL
+waiting for server to start.... done
+server started
+root@gamma:~#

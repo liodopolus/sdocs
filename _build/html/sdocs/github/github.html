@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Github &mdash; Start</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Start" href="../../index.html" />
+    <link rel="up" title="sdocs" href="../index_sdocs.html" />
+    <link rel="next" title="Backup" href="../backup/backup.html" />
+    <link rel="prev" title="Gunicorn" href="../django/gunicorn/gunicorn.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../backup/backup.html" title="Backup"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../django/gunicorn/gunicorn.html" title="Gunicorn"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Start</a> &raquo;</li>
+          <li><a href="../index_sdocs.html" accesskey="U">sdocs</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="github">
+<h1>Github<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h1>
+<p># Howto Setup Github</p>
+<p>I Prerequisites</p>
+<ol class="arabic simple">
+<li>git</li>
+<li>ssh</li>
+<li>login on github</li>
+</ol>
+<p>II Installation for Slackware</p>
+<ol class="arabic simple">
+<li>use slackpkg</li>
+<li>use sbopkg</li>
+<li>use SlackBuild scripts</li>
+</ol>
+<p>III Configuration</p>
+<p># quick setup</p>
+<p>create ssh key
+add ssh key
+create a repo in github</p>
+<p>initialisize repo and push it to remote repo with same name
+touch README.md
+git init
+git add README.md
+git commit -m &#8220;first commit&#8221;
+git remote add origin <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:liodopolus/scriptcol-current.git
+git push -u origin master
+(git remote add upstream <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:liodopolus/scriptcol-current.git)</p>
+<p># simple howto</p>
+<p><a class="reference external" href="http://githowto.com/setup">http://githowto.com/setup</a></p>
+<p># setup github
+<a class="reference external" href="https://help.github.com/articles/set-up-git/">https://help.github.com/articles/set-up-git/</a></p>
+<p>see too man git or man gittutorial:</p>
+<div class="highlight-python"><div class="highlight"><pre>git config --global user.name &quot;YOUR NAME&quot;
+git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;
+</pre></div>
+</div>
+<p># create a repo</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://help.github.com/articles/create-a-repo/">https://help.github.com/articles/create-a-repo/</a></div>
+<div class="line"><a class="reference external" href="https://help.github.com/articles/fork-a-repo/">https://help.github.com/articles/fork-a-repo/</a></div>
+<div class="line"><a class="reference external" href="https://help.github.com/articles/be-social/">https://help.github.com/articles/be-social/</a></div>
+</div>
+<p># git docs</p>
+<p><a class="reference external" href="http://git-scm.com/">http://git-scm.com/</a></p>
+<p># sync a fork</p>
+<p><a class="reference external" href="https://help.github.com/articles/syncing-a-fork/">https://help.github.com/articles/syncing-a-fork/</a></p>
+<p># push a remote</p>
+<blockquote>
+<div><p>gitstatus
+git status</p>
+<p>first add
+git add *</p>
+<p>then commit
+git commit -m &#8220;Kommentar&#8221;</p>
+<p>then push
+git push</p>
+</div></blockquote>
+<p><a class="reference external" href="https://help.github.com/articles/pushing-to-a-remote/">https://help.github.com/articles/pushing-to-a-remote/</a></p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../django/gunicorn/gunicorn.html"
+                        title="previous chapter">Gunicorn</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../backup/backup.html"
+                        title="next chapter">Backup</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/sdocs/github/github.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../backup/backup.html" title="Backup"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../django/gunicorn/gunicorn.html" title="Gunicorn"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Start</a> &raquo;</li>
+          <li><a href="../index_sdocs.html" >sdocs</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jeffrey Scherling.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

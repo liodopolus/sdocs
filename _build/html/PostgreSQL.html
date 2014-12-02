@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>PostgreSQL &mdash; Testproject 0.1.alpha documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.alpha',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Testproject 0.1.alpha documentation" href="index.html" />
+    <link rel="up" title="Setup" href="Setup.html" />
+    <link rel="next" title="Nginx" href="Nginx.html" />
+    <link rel="prev" title="Setup" href="Setup.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Nginx.html" title="Nginx"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Setup.html" title="Setup"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Testproject 0.1.alpha documentation</a> &raquo;</li>
+          <li><a href="Setup.html" accesskey="U">Setup</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="postgresql">
+<h1>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h1>
+<p># Howto Setup Postgresql</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This document was generated on 2014-11-09 at 22:27.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Most of this Source is written by Jeffrey Scherling</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.0.1.</span></p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">Google</p>
+</div>
+<p>I Prerequisites</p>
+<ol class="arabic simple">
+<li>postgresql-5.1.tar.gz</li>
+<li>privileged user only for sql-data</li>
+</ol>
+<p>II Installation for Slackware</p>
+<ol class="arabic simple">
+<li>use slackpkg</li>
+<li>use sbopkg</li>
+<li>use SlackBuild scripts</li>
+</ol>
+<p>III Configuration</p>
+<ol class="arabic simple">
+<li>postgresql</li>
+</ol>
+<p><a class="reference external" href="mailto:root&#37;&#52;&#48;gamma">root<span>&#64;</span>gamma</a>:~# su amorsql -c &#8220;initdb -D /var/lib/pgsql/9.3/data &#8211;locale=en_US.UTF-8 -A md5 -W&#8221;</p>
+<p>could not change directory to &#8220;/root&#8221;: Permission denied
+The files belonging to this database system will be owned by user &#8220;amorsql&#8221;.
+This user must also own the server process.</p>
+<p>The database cluster will be initialized with locale &#8220;en_US.UTF-8&#8221;.
+The default database encoding has accordingly been set to &#8220;UTF8&#8221;.
+The default text search configuration will be set to &#8220;english&#8221;.</p>
+<p>Data page checksums are disabled.</p>
+<p>fixing permissions on existing directory /var/lib/pgsql/9.3/data ... ok
+creating subdirectories ... ok
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+creating configuration files ... ok
+creating template1 database in /var/lib/pgsql/9.3/data/base/1 ... ok
+initializing pg_authid ... ok
+Enter new superuser password:
+Enter it again:
+setting password ... ok
+initializing dependencies ... ok
+creating system views ... ok
+loading system objects&#8217; descriptions ... ok
+creating collations ... ok
+creating conversions ... ok
+creating dictionaries ... ok
+setting privileges on built-in objects ... ok
+creating information schema ... ok
+loading PL/pgSQL server-side language ... ok
+vacuuming database template1 ... ok
+copying template1 to template0 ... ok
+copying template1 to postgres ... ok
+syncing data to disk ... ok</p>
+<p>Success. You can now start the database server using:</p>
+<p>postgres -D /var/lib/pgsql/9.3/data
+or
+pg_ctl -D /var/lib/pgsql/9.3/data -l logfile start</p>
+<p><a class="reference external" href="mailto:root&#37;&#52;&#48;gamma">root<span>&#64;</span>gamma</a>:~#</p>
+<ol class="arabic simple" start="2">
+<li>startup script rc.postgresql</li>
+</ol>
+<p>2.1 change user and group to what you set, edit rc.postgresql
+2.2 test it</p>
+<p><a class="reference external" href="mailto:root&#37;&#52;&#48;gamma">root<span>&#64;</span>gamma</a>:~# /etc/rc.d/rc.postgresql start
+Starting PostgreSQL
+waiting for server to start.... done
+server started
+<a class="reference external" href="mailto:root&#37;&#52;&#48;gamma">root<span>&#64;</span>gamma</a>:~#</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Setup.html"
+                        title="previous chapter">Setup</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Nginx.html"
+                        title="next chapter">Nginx</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/PostgreSQL.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Nginx.html" title="Nginx"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Setup.html" title="Setup"
+             >previous</a> |</li>
+        <li><a href="index.html">Testproject 0.1.alpha documentation</a> &raquo;</li>
+          <li><a href="Setup.html" >Setup</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jeffrey Scherling.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>
