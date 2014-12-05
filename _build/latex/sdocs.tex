@@ -14,7 +14,7 @@
 
 
 \title{sdocs}
-\date{December 02, 2014}
+\date{December 05, 2014}
 \release{0.1.alpha}
 \author{Jeffrey Scherling}
 \newcommand{\sphinxlogo}{}
@@ -457,7 +457,7 @@ deny\PYGZus{}file=\PYGZob{}/,/media,/gamma\PYGZus{}sftp\PYGZcb{}
 \href{mailto:root@gamma}{root@gamma}:\textasciitilde{}\# /etc/rc.d/rc.inetd restart
 Starting Internet super-server daemon:  /usr/sbin/inetd
 
-\# customize the login
+\# customize the login with vsftpd.banner\_file
 
 \begin{Verbatim}[commandchars=\\\{\}]
       \PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Welcome to my ftp Site!\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}
@@ -468,27 +468,23 @@ Starting Internet super-server daemon:  /usr/sbin/inetd
    ooo    oo   ooooo  oo      oooo      oo oooo oo   ooooo   oo      oooooo
     oo   oo  oo  oo  oo      oo oo      ooo  ooo   oo  oo   oo      oo
 ooooo  oooo  oooooo  oooo  ooo  ooo    oo    oo    oooooo  oo       ooooo
-\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}Jeffrey\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}
+\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}User 1\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}\PYGZus{}
 \end{Verbatim}
 
-\# user who are permitted to login
+\# allow user who are permitted to login with vsftpd.user\_list
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{jeffrey}
-\PYG{n}{slackuser}
-\PYG{n}{vitalij}
-\PYG{n}{achim}
-\PYG{n}{jens}
+User 1
+User 2
+User 3
 \end{Verbatim}
 
-\# user who login with chroot in a jail
+\# allow user who are login with chroot in a jail with vsftpd.chroot\_list
 
 \begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{jeffrey}
-\PYG{n}{slackuser}
-\PYG{n}{vitalij}
-\PYG{n}{achim}
-\PYG{n}{jens}
+User 1
+User 2
+User 3
 \end{Verbatim}
 
 

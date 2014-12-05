@@ -290,7 +290,7 @@ deny_file={/,/media,/gamma_sftp}
 <p># restart the process</p>
 <p><a class="reference external" href="mailto:root&#37;&#52;&#48;gamma">root<span>&#64;</span>gamma</a>:~# /etc/rc.d/rc.inetd restart
 Starting Internet super-server daemon:  /usr/sbin/inetd</p>
-<p># customize the login</p>
+<p># customize the login with vsftpd.banner_file</p>
 <div class="highlight-python"><div class="highlight"><pre>      ____________________________________________Welcome to my ftp Site!_____
              ooo                 ooo
              oo                  oo
@@ -299,23 +299,19 @@ Starting Internet super-server daemon:  /usr/sbin/inetd</p>
    ooo    oo   ooooo  oo      oooo      oo oooo oo   ooooo   oo      oooooo
     oo   oo  oo  oo  oo      oo oo      ooo  ooo   oo  oo   oo      oo
 ooooo  oooo  oooooo  oooo  ooo  ooo    oo    oo    oooooo  oo       ooooo
-_____________________________________________________________Jeffrey_____
+_____________________________________________________________User 1______
 </pre></div>
 </div>
-<p># user who are permitted to login</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">jeffrey</span>
-<span class="n">slackuser</span>
-<span class="n">vitalij</span>
-<span class="n">achim</span>
-<span class="n">jens</span>
+<p># allow user who are permitted to login with vsftpd.user_list</p>
+<div class="highlight-python"><div class="highlight"><pre>User 1
+User 2
+User 3
 </pre></div>
 </div>
-<p># user who login with chroot in a jail</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">jeffrey</span>
-<span class="n">slackuser</span>
-<span class="n">vitalij</span>
-<span class="n">achim</span>
-<span class="n">jens</span>
+<p># allow user who are login with chroot in a jail with vsftpd.chroot_list</p>
+<div class="highlight-python"><div class="highlight"><pre>User 1
+User 2
+User 3
 </pre></div>
 </div>
 </div>

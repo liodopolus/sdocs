@@ -16,19 +16,22 @@ root@gamma:~# /etc/rc.d/rc.inetd restart
 Starting Internet super-server daemon:  /usr/sbin/inetd
 
 
-# customize the login
+# customize the login with vsftpd.banner_file
+
 
 .. literalinclude::
         config/vsftpd.banner_file
 
 
-# user who are permitted to login
+# allow user who are permitted to login with vsftpd.user_list
+
 
 .. literalinclude::
         config/vsftpd.user_list
 
 
-# user who login with chroot in a jail
+# allow user who are login with chroot in a jail with vsftpd.chroot_list
+
 
 .. literalinclude::
         config/vsftpd.chroot_list
