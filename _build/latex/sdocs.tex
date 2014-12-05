@@ -121,13 +121,14 @@
 \phantomsection\label{index::doc}
 
 
-\textbf{sdocs is an akronym for small/simple dokumentation}
-
-Contents:
+\textbf{\# sdocs is an akronym for small/simple dokumentation}
 
 
-\chapter{Overview}
-\label{sdocs/overview:overview}\label{sdocs/overview:welcome-to-sdocs}\label{sdocs/overview::doc}
+\chapter{Contents}
+\label{index:welcome-to-sdocs}\label{index:contents}
+
+\section{Overview}
+\label{sdocs/overview:overview}\label{sdocs/overview::doc}
 \begin{notice}{warning}{Warning:}
 \begin{DUlineblock}{0em}
 \item[] \# A collection of Howto's, Guides, Snippets collected from the web
@@ -148,16 +149,16 @@ Google, for the source of these informations.
 
 
 \begin{notice}{note}{Note:}
-This document was generated on 2014-12-02 at 23:54.
+This document was generated on 2014-12-05 at 04:32.
 \end{notice}
 
 
-\chapter{sdocs}
+\section{sdocs}
 \label{sdocs/index_sdocs::doc}\label{sdocs/index_sdocs:sdocs}
 \# this is the index of sdocs
 
 
-\section{Sphinx}
+\subsection{Sphinx}
 \label{sdocs/sphinx/sphinx:sphinx}\label{sdocs/sphinx/sphinx::doc}
 \# a quick start guide
 
@@ -220,12 +221,12 @@ guide \href{http://docs.python-guide.org/en/latest/writing/documentation/}{http:
 \end{itemize}
 
 
-\section{Webserver}
+\subsection{Webserver}
 \label{sdocs/webserver/webserver:webserver}\label{sdocs/webserver/webserver::doc}
 \# webserver and their configuration
 
 
-\subsection{Nginx}
+\subsubsection{Nginx}
 \label{sdocs/webserver/nginx/nginx:nginx}\label{sdocs/webserver/nginx/nginx::doc}\begin{itemize}
 \item {} \begin{description}
 \item[{nginx configuration}] \leavevmode\begin{itemize}
@@ -269,12 +270,12 @@ http \PYGZob{}
 \end{Verbatim}
 
 
-\section{Ftpserver}
+\subsection{Ftpserver}
 \label{sdocs/ftpserver/ftpserver:ftpserver}\label{sdocs/ftpserver/ftpserver::doc}
 \# Ftpserver and their configuration
 
 
-\subsection{Vsftpd}
+\subsubsection{Vsftpd}
 \label{sdocs/ftpserver/vsftpd/vsftpd:vsftpd}\label{sdocs/ftpserver/vsftpd/vsftpd::doc}
 \# configuration of vsftpd
 
@@ -479,12 +480,12 @@ User 3
 \end{Verbatim}
 
 
-\section{Databases}
+\subsection{Databases}
 \label{sdocs/databases/databases::doc}\label{sdocs/databases/databases:databases}
 \# configuration of different databeses
 
 
-\subsection{MariaDB}
+\subsubsection{MariaDB}
 \label{sdocs/databases/mariadb/mariadb:mariadb}\label{sdocs/databases/mariadb/mariadb::doc}
 \# Howto Setup MariaDB
 
@@ -581,7 +582,7 @@ root@gamma:\PYGZti{}\PYGZsh{}
 \end{Verbatim}
 
 
-\subsection{PostgreSQL}
+\subsubsection{PostgreSQL}
 \label{sdocs/databases/postgresql/postgresql:postgresql}\label{sdocs/databases/postgresql/postgresql::doc}
 \# Howto Setup Postgresql
 
@@ -685,7 +686,7 @@ manage databases with phpPgAdmin
 \end{enumerate}
 
 
-\subsection{PHPmyadmin}
+\subsubsection{PHPmyadmin}
 \label{sdocs/databases/phpmyadmin/phpmyadmin:phpmyadmin}\label{sdocs/databases/phpmyadmin/phpmyadmin::doc}
 \# Howto Setup PHPmyadmin
 
@@ -750,7 +751,7 @@ start adminstration
 \end{enumerate}
 
 
-\subsection{phpPgAdmin}
+\subsubsection{phpPgAdmin}
 \label{sdocs/databases/phpPgAdmin/phpPgAdmin::doc}\label{sdocs/databases/phpPgAdmin/phpPgAdmin:phppgadmin}
 \# Howto Setup phpPgAdmin
 
@@ -779,13 +780,13 @@ III Configuration
 Setup: \href{http://phppgadmin.sourceforge.net/doku.php}{http://phppgadmin.sourceforge.net/doku.php}
 
 
-\section{Drupal}
+\subsection{Drupal}
 \label{sdocs/drupal/drupal:drupal}\label{sdocs/drupal/drupal::doc}
 setup drupal: \href{https://www.drupal.org/start}{https://www.drupal.org/start}
 drupal with nginx: \href{http://wiki.nginx.org/Drupal}{http://wiki.nginx.org/Drupal}
 
 
-\section{Django}
+\subsection{Django}
 \label{sdocs/django/django::doc}\label{sdocs/django/django:django}
 \# Howto Setup a Nginx, Django, Postgresql, Gunicorn deployment
 
@@ -826,7 +827,7 @@ use SlackBuild scripts
 III Configuration
 
 
-\subsection{Django-Setup}
+\subsubsection{Django-Setup}
 \label{sdocs/django/django-setup/django-setup:django-setup}\label{sdocs/django/django-setup/django-setup::doc}
 \# Howto Setup Django
 
@@ -862,7 +863,7 @@ use SlackBuild scripts
 III Configuration
 
 
-\subsection{Gunicorn}
+\subsubsection{Gunicorn}
 \label{sdocs/django/gunicorn/gunicorn::doc}\label{sdocs/django/gunicorn/gunicorn:gunicorn}
 I Build your First App with Gunicorn
 
@@ -899,12 +900,13 @@ I Build your First App with Gunicorn
 \end{Verbatim}
 
 
-\section{Github}
+\subsection{Github}
 \label{sdocs/github/github:github}\label{sdocs/github/github::doc}
 \# Howto Setup Github
 
-I Prerequisites
-\begin{enumerate}
+
+\subsubsection{I Prerequisites}
+\label{sdocs/github/github:i-prerequisites}\begin{itemize}
 \item {} 
 git
 
@@ -914,10 +916,11 @@ ssh
 \item {} 
 login on github
 
-\end{enumerate}
+\end{itemize}
 
-II Installation for Slackware
-\begin{enumerate}
+
+\subsubsection{II Installation for Slackware}
+\label{sdocs/github/github:ii-installation-for-slackware}\begin{itemize}
 \item {} 
 use slackpkg
 
@@ -927,109 +930,126 @@ use sbopkg
 \item {} 
 use SlackBuild scripts
 
-\end{enumerate}
+\end{itemize}
 
-III Configuration
-\begin{enumerate}
+
+\subsubsection{III Configuration}
+\label{sdocs/github/github:iii-configuration}
+\# quick setup
+\begin{itemize}
 \item {} 
-quick setup
-
-\end{enumerate}
-
 create ssh key
+
+\item {} 
 add ssh key
+
+\item {} 
 create a repo in github
+
+\item {} 
 push your changes to your repo
 
-2. setup github
+\end{itemize}
+
+\# setup git \footnote{
+see too: man git or man gittutorial
+}
+\begin{itemize}
+\item {} 
 \href{https://help.github.com/articles/set-up-git/}{https://help.github.com/articles/set-up-git/}
 
-see too man git or man gittutorial:
+\end{itemize}
+
+\# global git configuration
 
 \begin{Verbatim}[commandchars=\\\{\}]
 git config \PYGZhy{}\PYGZhy{}global user.name \PYGZdq{}YOUR NAME\PYGZdq{}
 git config \PYGZhy{}\PYGZhy{}global user.email \PYGZdq{}YOUR EMAIL ADDRESS\PYGZdq{}
 \end{Verbatim}
-\begin{enumerate}
-\setcounter{enumi}{2}
-\item {} 
-initialisize repo and push it to remote repo with same name
 
-\end{enumerate}
+\# initialisize repo and push it to remote repo with same name
 
+\begin{Verbatim}[commandchars=\\\{\}]
 cd repo
 touch README.md
 git init
 git add README.md
-git commit -m ``first commit''
-git remote add origin \href{mailto:git@github.com}{git@github.com}:githubuser/repo.git
-git push -u origin master
+git commit \PYGZhy{}m \PYGZdq{}first commit\PYGZdq{}
+git remote add origin git@github.com:githubuser/repo.git
+git push \PYGZhy{}u origin master
+\end{Verbatim}
 
-IV How to use it
-\begin{enumerate}
+
+\subsubsection{IV How to use it}
+\label{sdocs/github/github:iv-how-to-use-it}
+\# simple howtos
+\begin{itemize}
 \item {} 
-simple howtos
-
-\end{enumerate}
-
 \href{http://githowto.com/setup}{http://githowto.com/setup}
+
+\item {} 
 \href{http://gitreal.codeschool.com/levels/1}{http://gitreal.codeschool.com/levels/1}
 
-V Other Dokumentation
-\begin{enumerate}
+\end{itemize}
+
+
+\subsubsection{V Other Dokumentation}
+\label{sdocs/github/github:v-other-dokumentation}
+\# create a repo
+\begin{itemize}
 \item {} 
-create a repo
+\href{https://help.github.com/articles/create-a-repo/}{https://help.github.com/articles/create-a-repo/}
 
-\end{enumerate}
-
-\begin{DUlineblock}{0em}
-\item[] \href{https://help.github.com/articles/create-a-repo/}{https://help.github.com/articles/create-a-repo/}
-\item[] \href{https://help.github.com/articles/fork-a-repo/}{https://help.github.com/articles/fork-a-repo/}
-\item[] \href{https://help.github.com/articles/be-social/}{https://help.github.com/articles/be-social/}
-\end{DUlineblock}
-\begin{enumerate}
-\setcounter{enumi}{1}
 \item {} 
-sync a fork
+\href{https://help.github.com/articles/fork-a-repo/}{https://help.github.com/articles/fork-a-repo/}
 
-\end{enumerate}
-
-\begin{DUlineblock}{0em}
-\item[] \href{https://help.github.com/articles/syncing-a-fork/}{https://help.github.com/articles/syncing-a-fork/}
-\item[] \href{https://help.github.com/articles/pushing-to-a-remote/}{https://help.github.com/articles/pushing-to-a-remote/}
-\end{DUlineblock}
-\begin{enumerate}
-\setcounter{enumi}{2}
 \item {} 
-git docs
+\href{https://help.github.com/articles/be-social/}{https://help.github.com/articles/be-social/}
 
-\end{enumerate}
+\end{itemize}
 
+\# sync a fork
+\begin{itemize}
+\item {} 
+\href{https://help.github.com/articles/syncing-a-fork/}{https://help.github.com/articles/syncing-a-fork/}
+
+\item {} 
+\href{https://help.github.com/articles/pushing-to-a-remote/}{https://help.github.com/articles/pushing-to-a-remote/}
+
+\end{itemize}
+
+\# git docs
+\begin{itemize}
+\item {} 
 \href{http://git-scm.com/}{http://git-scm.com/}
 
-VI Use the Repo
-\begin{enumerate}
+\end{itemize}
+
+
+\subsubsection{VI Use the Repo}
+\label{sdocs/github/github:vi-use-the-repo}
+\# e.g. fork sphinx docs on readthedocs
+\begin{itemize}
 \item {} 
-e.g. fork sphinx docs on readthedocs
-
-\end{enumerate}
-
 \href{https://readthedocs.org/}{https://readthedocs.org/}
 
+\end{itemize}
+\paragraph{footnotes}
 
-\section{Backup}
+
+\subsection{Backup}
 \label{sdocs/backup/backup:backup}\label{sdocs/backup/backup::doc}
 \# cool backup software
 
 \href{http://www.cyberciti.biz/open-source/awesome-backup-software-for-linux-unix-osx-windows-systems/}{http://www.cyberciti.biz/open-source/awesome-backup-software-for-linux-unix-osx-windows-systems/}
 
 
-\subsection{Rsnapshot}
+\subsubsection{Rsnapshot}
 \label{sdocs/backup/rsnapshot/rsnapshot::doc}\label{sdocs/backup/rsnapshot/rsnapshot:rsnapshot}
 \href{http://www.rsnapshot.org/}{http://www.rsnapshot.org/}
 
 
-\section{Readthedocs}
+\subsection{Readthedocs}
 \label{sdocs/readthedocs/readthedocs:readthedocs}\label{sdocs/readthedocs/readthedocs::doc}
 \# a cool site for documentations
 
@@ -1039,16 +1059,10 @@ e.g. fork sphinx docs on readthedocs
 \chapter{ToDo}
 \label{index:todo}\begin{itemize}
 \item {} 
-setup git (in progress)
+setup ftp for public use
 
 \item {} 
-setup readthedocs (in progress)
-
-\item {} 
-setup ftpserver
-
-\item {} 
-send vitali and achim link to photos
+send link to photos
 
 \item {} 
 setup phpPgAmdin
@@ -1077,7 +1091,16 @@ read root mail from rsnapshot
 \chapter{Done}
 \label{index:done}\begin{itemize}
 \item {} 
-setup rsnapshot (finished)
+setup rsnapshot
+
+\item {} 
+setup git
+
+\item {} 
+setup ftpserver
+
+\item {} 
+setup readthedocs
 
 \end{itemize}
 

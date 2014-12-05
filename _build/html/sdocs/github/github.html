@@ -113,74 +113,91 @@
   <div class="section" id="github">
 <h1>Github<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h1>
 <p># Howto Setup Github</p>
-<p>I Prerequisites</p>
-<ol class="arabic simple">
+<div class="section" id="i-prerequisites">
+<h2>I Prerequisites<a class="headerlink" href="#i-prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
 <li>git</li>
 <li>ssh</li>
 <li>login on github</li>
-</ol>
-<p>II Installation for Slackware</p>
-<ol class="arabic simple">
+</ul>
+</div>
+<div class="section" id="ii-installation-for-slackware">
+<h2>II Installation for Slackware<a class="headerlink" href="#ii-installation-for-slackware" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
 <li>use slackpkg</li>
 <li>use sbopkg</li>
 <li>use SlackBuild scripts</li>
-</ol>
-<p>III Configuration</p>
-<ol class="arabic simple">
-<li>quick setup</li>
-</ol>
-<p>create ssh key
-add ssh key
-create a repo in github
-push your changes to your repo</p>
-<p>2. setup github
-<a class="reference external" href="https://help.github.com/articles/set-up-git/">https://help.github.com/articles/set-up-git/</a></p>
-<p>see too man git or man gittutorial:</p>
+</ul>
+</div>
+<div class="section" id="iii-configuration">
+<h2>III Configuration<a class="headerlink" href="#iii-configuration" title="Permalink to this headline">¶</a></h2>
+<p># quick setup</p>
+<ul class="simple">
+<li>create ssh key</li>
+<li>add ssh key</li>
+<li>create a repo in github</li>
+<li>push your changes to your repo</li>
+</ul>
+<p># setup git <a class="footnote-reference" href="#f1" id="id1">[1]</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://help.github.com/articles/set-up-git/">https://help.github.com/articles/set-up-git/</a></li>
+</ul>
+<p># global git configuration</p>
 <div class="highlight-python"><div class="highlight"><pre>git config --global user.name &quot;YOUR NAME&quot;
 git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;
 </pre></div>
 </div>
-<ol class="arabic simple" start="3">
-<li>initialisize repo and push it to remote repo with same name</li>
-</ol>
-<p>cd repo
+<p># initialisize repo and push it to remote repo with same name</p>
+<div class="highlight-python"><div class="highlight"><pre>cd repo
 touch README.md
 git init
 git add README.md
-git commit -m &#8220;first commit&#8221;
-git remote add origin <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:githubuser/repo.git
-git push -u origin master</p>
-<p>IV How to use it</p>
-<ol class="arabic simple">
-<li>simple howtos</li>
-</ol>
-<p><a class="reference external" href="http://githowto.com/setup">http://githowto.com/setup</a>
-<a class="reference external" href="http://gitreal.codeschool.com/levels/1">http://gitreal.codeschool.com/levels/1</a></p>
-<p>V Other Dokumentation</p>
-<ol class="arabic simple">
-<li>create a repo</li>
-</ol>
-<div class="line-block">
-<div class="line"><a class="reference external" href="https://help.github.com/articles/create-a-repo/">https://help.github.com/articles/create-a-repo/</a></div>
-<div class="line"><a class="reference external" href="https://help.github.com/articles/fork-a-repo/">https://help.github.com/articles/fork-a-repo/</a></div>
-<div class="line"><a class="reference external" href="https://help.github.com/articles/be-social/">https://help.github.com/articles/be-social/</a></div>
+git commit -m &quot;first commit&quot;
+git remote add origin git@github.com:githubuser/repo.git
+git push -u origin master
+</pre></div>
 </div>
-<ol class="arabic simple" start="2">
-<li>sync a fork</li>
-</ol>
-<div class="line-block">
-<div class="line"><a class="reference external" href="https://help.github.com/articles/syncing-a-fork/">https://help.github.com/articles/syncing-a-fork/</a></div>
-<div class="line"><a class="reference external" href="https://help.github.com/articles/pushing-to-a-remote/">https://help.github.com/articles/pushing-to-a-remote/</a></div>
 </div>
-<ol class="arabic simple" start="3">
-<li>git docs</li>
-</ol>
-<p><a class="reference external" href="http://git-scm.com/">http://git-scm.com/</a></p>
-<p>VI Use the Repo</p>
-<ol class="arabic simple">
-<li>e.g. fork sphinx docs on readthedocs</li>
-</ol>
-<p><a class="reference external" href="https://readthedocs.org/">https://readthedocs.org/</a></p>
+<div class="section" id="iv-how-to-use-it">
+<h2>IV How to use it<a class="headerlink" href="#iv-how-to-use-it" title="Permalink to this headline">¶</a></h2>
+<p># simple howtos</p>
+<ul class="simple">
+<li><a class="reference external" href="http://githowto.com/setup">http://githowto.com/setup</a></li>
+<li><a class="reference external" href="http://gitreal.codeschool.com/levels/1">http://gitreal.codeschool.com/levels/1</a></li>
+</ul>
+</div>
+<div class="section" id="v-other-dokumentation">
+<h2>V Other Dokumentation<a class="headerlink" href="#v-other-dokumentation" title="Permalink to this headline">¶</a></h2>
+<p># create a repo</p>
+<ul class="simple">
+<li><a class="reference external" href="https://help.github.com/articles/create-a-repo/">https://help.github.com/articles/create-a-repo/</a></li>
+<li><a class="reference external" href="https://help.github.com/articles/fork-a-repo/">https://help.github.com/articles/fork-a-repo/</a></li>
+<li><a class="reference external" href="https://help.github.com/articles/be-social/">https://help.github.com/articles/be-social/</a></li>
+</ul>
+<p># sync a fork</p>
+<ul class="simple">
+<li><a class="reference external" href="https://help.github.com/articles/syncing-a-fork/">https://help.github.com/articles/syncing-a-fork/</a></li>
+<li><a class="reference external" href="https://help.github.com/articles/pushing-to-a-remote/">https://help.github.com/articles/pushing-to-a-remote/</a></li>
+</ul>
+<p># git docs</p>
+<ul class="simple">
+<li><a class="reference external" href="http://git-scm.com/">http://git-scm.com/</a></li>
+</ul>
+</div>
+<div class="section" id="vi-use-the-repo">
+<h2>VI Use the Repo<a class="headerlink" href="#vi-use-the-repo" title="Permalink to this headline">¶</a></h2>
+<p># e.g. fork sphinx docs on readthedocs</p>
+<ul class="simple">
+<li><a class="reference external" href="https://readthedocs.org/">https://readthedocs.org/</a></li>
+</ul>
+<p class="rubric">footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>see too: man git or man gittutorial</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
