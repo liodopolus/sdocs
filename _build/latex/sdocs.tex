@@ -930,27 +930,18 @@ use SlackBuild scripts
 \end{enumerate}
 
 III Configuration
+\begin{enumerate}
+\item {} 
+quick setup
 
-\# quick setup
+\end{enumerate}
 
 create ssh key
 add ssh key
 create a repo in github
+push your changes to your repo
 
-initialisize repo and push it to remote repo with same name
-touch README.md
-git init
-git add README.md
-git commit -m ``first commit''
-git remote add origin \href{mailto:git@github.com}{git@github.com}:liodopolus/scriptcol-current.git
-git push -u origin master
-(git remote add upstream \href{mailto:git@github.com}{git@github.com}:liodopolus/scriptcol-current.git)
-
-\# simple howto
-
-\href{http://githowto.com/setup}{http://githowto.com/setup}
-
-\# setup github
+2. setup github
 \href{https://help.github.com/articles/set-up-git/}{https://help.github.com/articles/set-up-git/}
 
 see too man git or man gittutorial:
@@ -959,40 +950,71 @@ see too man git or man gittutorial:
 git config \PYGZhy{}\PYGZhy{}global user.name \PYGZdq{}YOUR NAME\PYGZdq{}
 git config \PYGZhy{}\PYGZhy{}global user.email \PYGZdq{}YOUR EMAIL ADDRESS\PYGZdq{}
 \end{Verbatim}
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item {} 
+initialisize repo and push it to remote repo with same name
 
-\# create a repo
+\end{enumerate}
+
+cd repo
+touch README.md
+git init
+git add README.md
+git commit -m ``first commit''
+git remote add origin \href{mailto:git@github.com}{git@github.com}:githubuser/repo.git
+git push -u origin master
+
+IV How to use it
+\begin{enumerate}
+\item {} 
+simple howtos
+
+\end{enumerate}
+
+\href{http://githowto.com/setup}{http://githowto.com/setup}
+\href{http://gitreal.codeschool.com/levels/1}{http://gitreal.codeschool.com/levels/1}
+
+V Other Dokumentation
+\begin{enumerate}
+\item {} 
+create a repo
+
+\end{enumerate}
 
 \begin{DUlineblock}{0em}
 \item[] \href{https://help.github.com/articles/create-a-repo/}{https://help.github.com/articles/create-a-repo/}
 \item[] \href{https://help.github.com/articles/fork-a-repo/}{https://help.github.com/articles/fork-a-repo/}
 \item[] \href{https://help.github.com/articles/be-social/}{https://help.github.com/articles/be-social/}
 \end{DUlineblock}
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item {} 
+sync a fork
 
-\# git docs
+\end{enumerate}
+
+\begin{DUlineblock}{0em}
+\item[] \href{https://help.github.com/articles/syncing-a-fork/}{https://help.github.com/articles/syncing-a-fork/}
+\item[] \href{https://help.github.com/articles/pushing-to-a-remote/}{https://help.github.com/articles/pushing-to-a-remote/}
+\end{DUlineblock}
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item {} 
+git docs
+
+\end{enumerate}
 
 \href{http://git-scm.com/}{http://git-scm.com/}
 
-\# sync a fork
+VI Use the Repo
+\begin{enumerate}
+\item {} 
+e.g. fork sphinx docs on readthedocs
 
-\href{https://help.github.com/articles/syncing-a-fork/}{https://help.github.com/articles/syncing-a-fork/}
+\end{enumerate}
 
-\# push a remote
-\begin{quote}
-
-gitstatus
-git status
-
-first add
-git add *
-
-then commit
-git commit -m ``Kommentar''
-
-then push
-git push
-\end{quote}
-
-\href{https://help.github.com/articles/pushing-to-a-remote/}{https://help.github.com/articles/pushing-to-a-remote/}
+\href{https://readthedocs.org/}{https://readthedocs.org/}
 
 
 \section{Backup}

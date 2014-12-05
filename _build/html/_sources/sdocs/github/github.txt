@@ -4,6 +4,7 @@ Github
 .. |date| date::
 .. |time| date:: %H:%M
 
+
 # Howto Setup Github
 
 I Prerequisites
@@ -19,29 +20,17 @@ II Installation for Slackware
 2. use sbopkg
 3. use SlackBuild scripts
 
+
 III Configuration
 
-# quick setup
+1. quick setup
 
 create ssh key
 add ssh key
 create a repo in github
+push your changes to your repo
 
-
-initialisize repo and push it to remote repo with same name
-touch README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:liodopolus/scriptcol-current.git
-git push -u origin master
-(git remote add upstream git@github.com:liodopolus/scriptcol-current.git)
-
-# simple howto
-
-http://githowto.com/setup
-
-# setup github
+2. setup github
 https://help.github.com/articles/set-up-git/
 
 see too man git or man gittutorial::
@@ -49,35 +38,46 @@ see too man git or man gittutorial::
         git config --global user.name "YOUR NAME" 
         git config --global user.email "YOUR EMAIL ADDRESS"
 
-# create a repo
+3. initialisize repo and push it to remote repo with same name
+
+cd repo
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:githubuser/repo.git
+git push -u origin master
+
+
+IV How to use it
+
+1. simple howtos
+
+http://githowto.com/setup
+http://gitreal.codeschool.com/levels/1
+
+
+V Other Dokumentation
+
+1. create a repo
 
 | https://help.github.com/articles/create-a-repo/
 | https://help.github.com/articles/fork-a-repo/
 | https://help.github.com/articles/be-social/
 
-# git docs
+2. sync a fork
+
+| https://help.github.com/articles/syncing-a-fork/
+| https://help.github.com/articles/pushing-to-a-remote/
+
+3. git docs
 
 http://git-scm.com/
 
-# sync a fork
 
-https://help.github.com/articles/syncing-a-fork/
+VI Use the Repo
 
+1. e.g. fork sphinx docs on readthedocs
 
-# push a remote
-
-        gitstatus
-        git status
-
-        first add
-        git add *
-
-        then commit
-        git commit -m "Kommentar"
-
-        then push
-        git push
-
-https://help.github.com/articles/pushing-to-a-remote/
-
+https://readthedocs.org/
 
