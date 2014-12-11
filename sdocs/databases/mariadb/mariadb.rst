@@ -30,3 +30,8 @@ Howto: http://docs.slackware.com/howtos:databases:install_mariadb_on_slackware
 .. literalinclude::
         output/console-output
 
+IV Backup
+
+http://wiki.ubuntuusers.de/MySQL/Backup
+http://www.mysqldumper.de/tutorials/
+

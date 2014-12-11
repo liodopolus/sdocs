@@ -1,4 +1,4 @@
-This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.5.17)  5 DEC 2014 05:47
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdflatex 2010.5.17)  11 DEC 2014 02:33
 entering extended mode
 **sdocs.tex
 (./sdocs.tex
@@ -885,10 +885,10 @@ Underfull \vbox (badness 10000) detected at line 445
 Underfull \vbox (badness 10000) detected at line 445
  []
 
-[6] [7] [8] [9] [10] [11] [12] [13]
+[6] [7] [8] [9]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1037.
- [14] [15] [16
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 660.
+ [10] [11] [12] [13] [14] [15] [16
 
 ]
 Chapter 2.
@@ -902,16 +902,16 @@ Chapter 3.
 Chapter 4.
 (./sdocs.ind) [21] (./sdocs.aux) ) 
 Here is how much of TeX's memory you used:
- 6612 strings out of 94500
- 84071 string characters out of 1176766
- 149697 words of memory out of 1000000
- 9444 multiletter control sequences out of 10000+50000
+ 6625 strings out of 94500
+ 84491 string characters out of 1176766
+ 149996 words of memory out of 1000000
+ 9450 multiletter control sequences out of 10000+50000
  79118 words of font info for 84 fonts, out of 500000 for 2000
  581 hyphenation exceptions out of 1000
  34i,12n,45p,638b,379s stack positions out of 1500i,500n,5000p,200000b,5000s
 PDF statistics:
- 279 PDF objects out of 300000
- 120 named destinations out of 131072
+ 289 PDF objects out of 300000
+ 127 named destinations out of 131072
  69 words of extra memory for PDF output out of 65536
 {/usr/share/texmf/fonts/enc/dvips/psnfss/8r.e
 nc}</usr/share/texmf/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf/fonts
@@ -919,4 +919,4 @@ nc}</usr/share/texmf/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf/fonts
 ></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/typ
 e1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvb8a.p
 fb>
-Output written on sdocs.pdf (25 pages, 139899 bytes).
+Output written on sdocs.pdf (25 pages, 141761 bytes).

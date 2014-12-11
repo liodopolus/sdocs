@@ -9,23 +9,28 @@
 \contentsline {subsubsection}{Vsftpd}{5}{subsubsection*.5}
 \contentsline {subsection}{\numberline {1.2.4}Databases}{8}{subsection.1.2.4}
 \contentsline {subsubsection}{MariaDB}{8}{subsubsection*.6}
-\contentsline {subsubsection}{PostgreSQL}{9}{subsubsection*.7}
-\contentsline {subsubsection}{PHPmyadmin}{11}{subsubsection*.8}
-\contentsline {subsubsection}{phpPgAdmin}{11}{subsubsection*.9}
-\contentsline {subsection}{\numberline {1.2.5}Drupal}{11}{subsection.1.2.5}
+\contentsline {subsubsection}{PHPmyadmin}{9}{subsubsection*.7}
+\contentsline {subsubsection}{MySQLDumper}{10}{subsubsection*.8}
+\contentsline {paragraph}{I Prerequisites}{10}{paragraph*.9}
+\contentsline {paragraph}{II Installation for Slackware}{10}{paragraph*.10}
+\contentsline {paragraph}{III Configuration}{10}{paragraph*.11}
+\contentsline {paragraph}{IV Backup}{10}{paragraph*.12}
+\contentsline {subsubsection}{PostgreSQL}{10}{subsubsection*.13}
+\contentsline {subsubsection}{phpPgAdmin}{12}{subsubsection*.14}
+\contentsline {subsection}{\numberline {1.2.5}Drupal}{12}{subsection.1.2.5}
 \contentsline {subsection}{\numberline {1.2.6}Django}{12}{subsection.1.2.6}
-\contentsline {subsubsection}{Django-Setup}{12}{subsubsection*.10}
-\contentsline {subsubsection}{Gunicorn}{12}{subsubsection*.11}
+\contentsline {subsubsection}{Django-Setup}{12}{subsubsection*.15}
+\contentsline {subsubsection}{Gunicorn}{13}{subsubsection*.16}
 \contentsline {subsection}{\numberline {1.2.7}Github}{13}{subsection.1.2.7}
-\contentsline {subsubsection}{I Prerequisites}{13}{subsubsection*.12}
-\contentsline {subsubsection}{II Installation for Slackware}{13}{subsubsection*.13}
-\contentsline {subsubsection}{III Configuration}{13}{subsubsection*.14}
-\contentsline {subsubsection}{IV How to use it}{14}{subsubsection*.15}
-\contentsline {subsubsection}{V Other Dokumentation}{14}{subsubsection*.16}
-\contentsline {subsubsection}{VI Use the Repo}{14}{subsubsection*.17}
-\contentsline {paragraph}{footnotes}{14}{paragraph*.18}
-\contentsline {subsection}{\numberline {1.2.8}Backup}{14}{subsection.1.2.8}
-\contentsline {subsubsection}{Rsnapshot}{15}{subsubsection*.19}
+\contentsline {subsubsection}{I Prerequisites}{13}{subsubsection*.17}
+\contentsline {subsubsection}{II Installation for Slackware}{14}{subsubsection*.18}
+\contentsline {subsubsection}{III Configuration}{14}{subsubsection*.19}
+\contentsline {subsubsection}{IV How to use it}{14}{subsubsection*.20}
+\contentsline {subsubsection}{V Other Dokumentation}{14}{subsubsection*.21}
+\contentsline {subsubsection}{VI Use the Repo}{15}{subsubsection*.22}
+\contentsline {paragraph}{footnotes}{15}{paragraph*.23}
+\contentsline {subsection}{\numberline {1.2.8}Backup}{15}{subsection.1.2.8}
+\contentsline {subsubsection}{Rsnapshot}{15}{subsubsection*.24}
 \contentsline {subsection}{\numberline {1.2.9}Readthedocs}{15}{subsection.1.2.9}
 \contentsline {chapter}{\numberline {2}ToDo}{17}{chapter.2}
 \contentsline {chapter}{\numberline {3}Done}{19}{chapter.3}

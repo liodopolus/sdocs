@@ -37,6 +37,7 @@ ToDo
 
 Done
 ----
++ setup mysqldumper
 + setup rsnapshot
 + setup git
 + setup ftpserver

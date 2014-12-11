@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MariaDB &mdash; sdocs</title>
+  <title>MySQLDumper &mdash; sdocs</title>
   
 
   
@@ -30,8 +30,8 @@
   
     <link rel="top" title="sdocs" href="../../../index.html"/>
         <link rel="up" title="Databases" href="../databases.html"/>
-        <link rel="next" title="PHPmyadmin" href="../phpmyadmin/phpmyadmin.html"/>
-        <link rel="prev" title="Databases" href="../databases.html"/> 
+        <link rel="next" title="PostgreSQL" href="../postgresql/postgresql.html"/>
+        <link rel="prev" title="PHPmyadmin" href="../phpmyadmin/phpmyadmin.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -101,10 +101,10 @@
       
           <li><a href="../databases.html">Databases</a> &raquo;</li>
       
-    <li>MariaDB</li>
+    <li>MySQLDumper</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../../../_sources/sdocs/databases/mariadb/mariadb.txt" rel="nofollow"> View page source</a>
+          <a href="../../../_sources/sdocs/databases/mysqldumper/mysqldumper.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -112,79 +112,29 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="mariadb">
-<h1>MariaDB<a class="headerlink" href="#mariadb" title="Permalink to this headline">¶</a></h1>
-<p># Howto Setup MariaDB</p>
-<p>I Prerequisites</p>
+  <div class="section" id="mysqldumper">
+<h1>MySQLDumper<a class="headerlink" href="#mysqldumper" title="Permalink to this headline">¶</a></h1>
+<p># Howto Setup MySQLDumper</p>
+<div class="section" id="i-prerequisites">
+<h2>I Prerequisites<a class="headerlink" href="#i-prerequisites" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>mariadb-5.5.40-x86_64-2.txz</li>
-<li>privileged user only for sql-data, mostly mysql</li>
+<li>MySQLDumper1.24.4.zip</li>
 </ol>
-<p>II Installation for Slackware</p>
-<ol class="arabic simple">
-<li>use slackpkg</li>
-<li>use sbopkg</li>
-<li>use SlackBuild scripts</li>
-</ol>
-<p>III Configuration</p>
-<p>Howto: <a class="reference external" href="http://docs.slackware.com/howtos:databases:install_mariadb_on_slackware">http://docs.slackware.com/howtos:databases:install_mariadb_on_slackware</a></p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>mysql_install_db &#8211;user=mysql</li>
-<li>chown -R mysql.mysql /var/lib/mysql</li>
-<li>chown 755 /etc/rc.d/rc.mysqld</li>
-<li>/etc/rc.d/rc.mysqld start</li>
-<li>mysqladmin -u root password &#8216;NEW_PASSWORD&#8217;</li>
-<li>use phpmyadmin to manage databases</li>
-</ol>
-</div></blockquote>
-<div class="highlight-python"><div class="highlight"><pre>root@gamma:~# mysql_install_db --user=mysql
-Installing MariaDB/MySQL system tables in &#39;/var/lib/mysql&#39; ...
-OK
-Filling help tables...
-OK
-
-To start mysqld at boot time you have to copy
-support-files/mysql.server to the right place for your system
-
-PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
-To do so, start the server, then issue the following commands:
-
-&#39;/usr/bin/mysqladmin&#39; -u root password &#39;new-password&#39;
-&#39;/usr/bin/mysqladmin&#39; -u root -h gamma password &#39;new-password&#39;
-
-Alternatively you can run:
-&#39;/usr/bin/mysql_secure_installation&#39;
-
-which will also give you the option of removing the test
-databases and anonymous user created by default.  This is
-strongly recommended for production servers.
-
-See the MariaDB Knowledgebase at http://mariadb.com/kb or the
-MySQL manual for more instructions.
-
-You can start the MariaDB daemon with:
-cd &#39;/usr&#39; ; /usr/bin/mysqld_safe --datadir=&#39;/var/lib/mysql&#39;
-
-You can test the MariaDB daemon with mysql-test-run.pl
-cd &#39;/usr/mysql-test&#39; ; perl mysql-test-run.pl
-
-Please report any problems at http://mariadb.org/jira
-
-The latest information about MariaDB is available at http://mariadb.org/.
-You can find additional information about the MySQL part at:
-http://dev.mysql.com
-Support MariaDB development by buying support/new features from
-SkySQL Ab. You can contact us about this at sales@skysql.com.
-Alternatively consider joining our community based development effort:
-http://mariadb.com/kb/en/contributing-to-the-mariadb-project/
-
-root@gamma:~#
-</pre></div>
 </div>
-<p>IV Backup</p>
-<p><a class="reference external" href="http://wiki.ubuntuusers.de/MySQL/Backup">http://wiki.ubuntuusers.de/MySQL/Backup</a>
-<a class="reference external" href="http://www.mysqldumper.de/tutorials/">http://www.mysqldumper.de/tutorials/</a></p>
+<div class="section" id="ii-installation-for-slackware">
+<h2>II Installation for Slackware<a class="headerlink" href="#ii-installation-for-slackware" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>unzip</li>
+</ol>
+</div>
+<div class="section" id="iii-configuration">
+<h2>III Configuration<a class="headerlink" href="#iii-configuration" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.mysqldumper.de/tutorials/">http://www.mysqldumper.de/tutorials/</a></p>
+</div>
+<div class="section" id="iv-backup">
+<h2>IV Backup<a class="headerlink" href="#iv-backup" title="Permalink to this headline">¶</a></h2>
+<p>use cron</p>
+</div>
 </div>
 
 
@@ -193,10 +143,10 @@ root@gamma:~#
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../phpmyadmin/phpmyadmin.html" class="btn btn-neutral float-right" title="PHPmyadmin">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../postgresql/postgresql.html" class="btn btn-neutral float-right" title="PostgreSQL">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../databases.html" class="btn btn-neutral" title="Databases"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../phpmyadmin/phpmyadmin.html" class="btn btn-neutral" title="PHPmyadmin"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

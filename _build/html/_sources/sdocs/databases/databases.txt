@@ -8,8 +8,9 @@ Databases
         :maxdepth: 3
 
         mariadb/mariadb
-        postgresql/postgresql
         phpmyadmin/phpmyadmin
+        mysqldumper/mysqldumper
+        postgresql/postgresql
         phpPgAdmin/phpPgAdmin
 
 

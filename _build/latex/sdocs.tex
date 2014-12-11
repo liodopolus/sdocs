@@ -14,7 +14,7 @@
 
 
 \title{sdocs}
-\date{December 05, 2014}
+\date{December 11, 2014}
 \release{0.1.alpha}
 \author{Jeffrey Scherling}
 \newcommand{\sphinxlogo}{}
@@ -581,6 +581,107 @@ http://mariadb.com/kb/en/contributing\PYGZhy{}to\PYGZhy{}the\PYGZhy{}mariadb\PYG
 root@gamma:\PYGZti{}\PYGZsh{}
 \end{Verbatim}
 
+IV Backup
+
+\href{http://wiki.ubuntuusers.de/MySQL/Backup}{http://wiki.ubuntuusers.de/MySQL/Backup}
+\href{http://www.mysqldumper.de/tutorials/}{http://www.mysqldumper.de/tutorials/}
+
+
+\subsubsection{PHPmyadmin}
+\label{sdocs/databases/phpmyadmin/phpmyadmin:phpmyadmin}\label{sdocs/databases/phpmyadmin/phpmyadmin::doc}
+\# Howto Setup PHPmyadmin
+
+I Prerequisites
+\begin{enumerate}
+\item {} 
+phpmyadmin-4.2.11-noarch-1js.txz
+
+\end{enumerate}
+
+II Installation for Slackware
+\begin{enumerate}
+\item {} 
+use slackpkg
+
+\item {} 
+use sbopkg
+
+\item {} 
+use SlackBuild scripts
+
+\end{enumerate}
+
+III Configuration
+
+Setup: \href{http://wiki.phpmyadmin.net/pma/Setup}{http://wiki.phpmyadmin.net/pma/Setup}
+Quick-Install: \href{http://wiki.phpmyadmin.net/pma/Quick\_Install}{http://wiki.phpmyadmin.net/pma/Quick\_Install}
+\begin{enumerate}
+\item {} 
+cd phpMyAdmin
+
+\item {} 
+mkdir config                        \# create directory for saving
+
+\item {} 
+chmod o+rw config                   \# give it world writable permissions
+
+\item {} 
+cp config.inc.php config/           \# copy current configuration for editing
+
+\item {} 
+chmod o+w config/config.inc.php     \# give it world writable permissions
+
+\item {} 
+open \href{http://phpmyadmin/setup/}{http://phpmyadmin/setup/}       \# see nginx config
+
+\item {} 
+mv config/config.inc.php .          \# move file to current directory
+
+\item {} 
+chmod o-rw config.inc.php           \# remove world read and write permissions
+
+\item {} 
+open \href{http://phpmyadmin/}{http://phpmyadmin/}
+
+\item {} 
+login with root login and password
+
+\item {} 
+start adminstration
+
+\end{enumerate}
+
+
+\subsubsection{MySQLDumper}
+\label{sdocs/databases/mysqldumper/mysqldumper:mysqldumper}\label{sdocs/databases/mysqldumper/mysqldumper::doc}
+\# Howto Setup MySQLDumper
+
+
+\paragraph{I Prerequisites}
+\label{sdocs/databases/mysqldumper/mysqldumper:i-prerequisites}\begin{enumerate}
+\item {} 
+MySQLDumper1.24.4.zip
+
+\end{enumerate}
+
+
+\paragraph{II Installation for Slackware}
+\label{sdocs/databases/mysqldumper/mysqldumper:ii-installation-for-slackware}\begin{enumerate}
+\item {} 
+unzip
+
+\end{enumerate}
+
+
+\paragraph{III Configuration}
+\label{sdocs/databases/mysqldumper/mysqldumper:iii-configuration}
+\href{http://www.mysqldumper.de/tutorials/}{http://www.mysqldumper.de/tutorials/}
+
+
+\paragraph{IV Backup}
+\label{sdocs/databases/mysqldumper/mysqldumper:iv-backup}
+use cron
+
 
 \subsubsection{PostgreSQL}
 \label{sdocs/databases/postgresql/postgresql:postgresql}\label{sdocs/databases/postgresql/postgresql::doc}
@@ -682,71 +783,6 @@ root@gamma:\PYGZti{}\PYGZsh{}
 \setcounter{enumi}{3}
 \item {} 
 manage databases with phpPgAdmin
-
-\end{enumerate}
-
-
-\subsubsection{PHPmyadmin}
-\label{sdocs/databases/phpmyadmin/phpmyadmin:phpmyadmin}\label{sdocs/databases/phpmyadmin/phpmyadmin::doc}
-\# Howto Setup PHPmyadmin
-
-I Prerequisites
-\begin{enumerate}
-\item {} 
-phpmyadmin-4.2.11-noarch-1js.txz
-
-\end{enumerate}
-
-II Installation for Slackware
-\begin{enumerate}
-\item {} 
-use slackpkg
-
-\item {} 
-use sbopkg
-
-\item {} 
-use SlackBuild scripts
-
-\end{enumerate}
-
-III Configuration
-
-Setup: \href{http://wiki.phpmyadmin.net/pma/Setup}{http://wiki.phpmyadmin.net/pma/Setup}
-Quick-Install: \href{http://wiki.phpmyadmin.net/pma/Quick\_Install}{http://wiki.phpmyadmin.net/pma/Quick\_Install}
-\begin{enumerate}
-\item {} 
-cd phpMyAdmin
-
-\item {} 
-mkdir config                        \# create directory for saving
-
-\item {} 
-chmod o+rw config                   \# give it world writable permissions
-
-\item {} 
-cp config.inc.php config/           \# copy current configuration for editing
-
-\item {} 
-chmod o+w config/config.inc.php     \# give it world writable permissions
-
-\item {} 
-open \href{http://phpmyadmin/setup/}{http://phpmyadmin/setup/}       \# see nginx config
-
-\item {} 
-mv config/config.inc.php .          \# move file to current directory
-
-\item {} 
-chmod o-rw config.inc.php           \# remove world read and write permissions
-
-\item {} 
-open \href{http://phpmyadmin/}{http://phpmyadmin/}
-
-\item {} 
-login with root login and password
-
-\item {} 
-start adminstration
 
 \end{enumerate}
 
@@ -1090,6 +1126,9 @@ read root mail from rsnapshot
 
 \chapter{Done}
 \label{index:done}\begin{itemize}
+\item {} 
+setup mysqldumper
+
 \item {} 
 setup rsnapshot
 
