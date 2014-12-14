@@ -18,6 +18,7 @@ sdocs
         github/github
         backup/backup
         readthedocs/readthedocs
+        raspberrypi/raspberrypi
 
 
 .. add directory/content.rst here
