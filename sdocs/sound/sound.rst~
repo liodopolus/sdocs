@@ -28,6 +28,7 @@ III Configuration
 
 + lsmod | grep snd (check if snd_hda_intel is loaded)
 + aplay -l (check sound devices)
++ cat /proc/asound/card*/codec* | grep Codec
 + alsamixer
 + alsactl store
 + kde system setup multimedia
@@ -60,6 +61,11 @@ III Configuration
         card 0: PCH [HDA Intel PCH], device 3: HDMI 0 [HDMI 0]
         Subdevices: 1/1
         Subdevice #0: subdevice #0
+
+# output of cat /proc/asound/card*/codec* | grep Codec ::
+
+        Codec: Conexant CX20588
+        Codec: Intel CougarPoint HDMI
 
 
 .. rubric:: footnotes

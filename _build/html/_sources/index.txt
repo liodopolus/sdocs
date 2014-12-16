@@ -16,8 +16,8 @@ Contents
 .. toctree::
         :maxdepth: 1
 
-        sdocs/overview
-        sdocs/index_sdocs
+        sdocs/overview/overview
+        sdocs/index/sdocs
 
 
 ToDo

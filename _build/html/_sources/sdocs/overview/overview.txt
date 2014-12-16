@@ -14,7 +14,17 @@ Overview
 .. seealso:: Google, for the source of these informations.
 .. note:: This document was generated on |date| at |time|.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+.. warning::
+
+        This work is licensed under a `Creative Commons Attribution-ShareAlike 4.0 International License`_.
+
+.. image:: 80x15.png
+        :alt: http://creativecommons.org/licenses/by-sa/4.0/
+        :align: right 
+        :target: `Creative Commons Attribution-ShareAlike 4.0 International License`_
+
+.. _Creative Commons Attribution-ShareAlike 4.0 International License: http://creativecommons.org/licenses/by-sa/4.0/
+
 
 .. rubric:: Footnotes
 

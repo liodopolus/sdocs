@@ -14,6 +14,18 @@ Overview
 .. seealso:: Google, for the source of these informations.
 .. note:: This document was generated on |date| at |time|.
 
+.. warning::
+
+        This work is licensed under a `Creative Commons Attribution-ShareAlike 4.0 International License`_.
+
+.. image:: 80x15.png
+        :alt: http://creativecommons.org/licenses/by-sa/4.0/
+        :align: right 
+        :target: `Creative Commons Attribution-ShareAlike 4.0 International License`_
+
+.. _Creative Commons Attribution-ShareAlike 4.0 International License: http://creativecommons.org/licenses/by-sa/4.0/
+
+
 .. rubric:: Footnotes
 
 .. [#f1] Have Fun!

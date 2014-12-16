@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sound &mdash; sdocs</title>
+  <title>Overview &mdash; sdocs</title>
   
 
   
@@ -29,8 +29,8 @@
 
   
     <link rel="top" title="sdocs" href="../../index.html"/>
-        <link rel="up" title="sdocs" href="../index_sdocs.html"/>
-        <link rel="prev" title="Raspberry Pi" href="../raspberrypi/raspberrypi.html"/> 
+        <link rel="next" title="sdocs" href="../index/sdocs.html"/>
+        <link rel="prev" title="Welcome to sdocs!" href="../../index.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -60,8 +60,8 @@
         
         
             <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index_sdocs.html">sdocs</a><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index/sdocs.html">sdocs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../sphinx/sphinx.html">Sphinx</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../webserver/webserver.html">Webserver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ftpserver/ftpserver.html">Ftpserver</a></li>
@@ -72,7 +72,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../backup/backup.html">Backup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../readthedocs/readthedocs.html">Readthedocs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../raspberrypi/raspberrypi.html">Raspberry Pi</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sound/sound.html">Sound</a></li>
 </ul>
 </li>
 </ul>
@@ -98,12 +98,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../index.html">Docs</a> &raquo;</li>
       
-          <li><a href="../index_sdocs.html">sdocs</a> &raquo;</li>
-      
-    <li>Sound</li>
+    <li>Overview</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../../_sources/sdocs/sound/sound.txt" rel="nofollow"> View page source</a>
+          <a href="../../_sources/sdocs/overview/overview.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -111,73 +109,37 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="sound">
-<h1>Sound<a class="headerlink" href="#sound" title="Permalink to this headline">¶</a></h1>
-<p># Howto Setup Sound</p>
-<div class="section" id="i-prerequisites">
-<h2>I Prerequisites<a class="headerlink" href="#i-prerequisites" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>alsa</li>
-</ul>
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<div class="last line-block">
+<div class="line"># A collection of Howto&#8217;s, Guides, Snippets collected from the web</div>
+<div class="line"># Only for private use and there ist no warranty for correct information</div>
+<div class="line"># You use it at your own risk, and all information is copyrighted by the owner</div>
+<div class="line"># Most of this Source is written and collected by Jeffrey Scherling <a class="footnote-reference" href="#f1" id="id1">[1]</a></div>
 </div>
-<div class="section" id="ii-installation-for-slackware">
-<h2>II Installation for Slackware<a class="headerlink" href="#ii-installation-for-slackware" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>use slackpkg</li>
-<li>use sbopkg</li>
-<li>use SlackBuild scripts</li>
-</ul>
 </div>
-<div class="section" id="iii-configuration">
-<h2>III Configuration<a class="headerlink" href="#iii-configuration" title="Permalink to this headline">¶</a></h2>
-<p># quick setup</p>
-<ul class="simple">
-<li>lsmod | grep snd (check if snd_hda_intel is loaded)</li>
-<li>aplay -l (check sound devices)</li>
-<li>cat /proc/asound/card*/codec* | grep Codec</li>
-<li>alsamixer</li>
-<li>alsactl store</li>
-<li>kde system setup multimedia</li>
-</ul>
-<p># setup sound <a class="footnote-reference" href="#f1" id="id1">[1]</a></p>
-<ul class="simple">
-<li><a class="reference external" href="http://docs.slackware.com/howtos:hardware:audio_and_snd-hda-intel">http://docs.slackware.com/howtos:hardware:audio_and_snd-hda-intel</a></li>
-</ul>
-<p># global sound configuration</p>
-<div class="highlight-python"><div class="highlight"><pre>alsamixer
-alsactl store
-</pre></div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">Google, for the source of these informations.</p>
 </div>
-<p># special sound configuration</p>
-<div class="highlight-python"><div class="highlight"><pre>echo &quot;options snd-hda-intel model=auto&quot; &gt; /etc/modprobe.d/snd-hda-intel.conf
-</pre></div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This document was generated on 2014-12-16 at 21:06.</p>
 </div>
-<p># output of aplay -l</p>
-<div class="highlight-python"><div class="highlight"><pre>**** List of PLAYBACK Hardware Devices ****
-card 0: PCH [HDA Intel PCH], device 0: CONEXANT Analog [CONEXANT Analog]
-Subdevices: 1/1
-Subdevice #0: subdevice #0
-card 0: PCH [HDA Intel PCH], device 1: Conexant Digital [Conexant Digital]
-Subdevices: 1/1
-Subdevice #0: subdevice #0
-card 0: PCH [HDA Intel PCH], device 3: HDMI 0 [HDMI 0]
-Subdevices: 1/1
-Subdevice #0: subdevice #0
-</pre></div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This work is licensed under a <a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 </div>
-<p># output of cat /proc/asound/card*/codec* | grep Codec</p>
-<div class="highlight-python"><div class="highlight"><pre>Codec: Conexant CX20588
-Codec: Intel CougarPoint HDMI
-</pre></div>
-</div>
-<p class="rubric">footnotes</p>
+<a class="reference external image-reference" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="http://creativecommons.org/licenses/by-sa/4.0/" class="align-right" src="../../_images/80x15.png" /></a>
+<p class="rubric">Footnotes</p>
 <table class="docutils footnote" frame="void" id="f1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>see too: /etc/modprobe.d/sound.conf</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Have Fun!</td></tr>
 </tbody>
 </table>
-</div>
 </div>
 
 
@@ -186,8 +148,10 @@ Codec: Intel CougarPoint HDMI
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../index/sdocs.html" class="btn btn-neutral float-right" title="sdocs">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="../raspberrypi/raspberrypi.html" class="btn btn-neutral" title="Raspberry Pi"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="../../index.html" class="btn btn-neutral" title="Welcome to sdocs!"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
