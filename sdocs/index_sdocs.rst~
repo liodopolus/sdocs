@@ -19,6 +19,7 @@ sdocs
         backup/backup
         readthedocs/readthedocs
         raspberrypi/raspberrypi
+        sound/sound
 
 
 .. add directory/content.rst here

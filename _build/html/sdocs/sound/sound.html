@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sound &mdash; sdocs</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="sdocs" href="../../index.html"/>
+        <link rel="up" title="sdocs" href="../index_sdocs.html"/>
+        <link rel="prev" title="Raspberry Pi" href="../raspberrypi/raspberrypi.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+          <a href="../../index.html" class="fa fa-home"> sdocs</a>
+        
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index_sdocs.html">sdocs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../sphinx/sphinx.html">Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../webserver/webserver.html">Webserver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ftpserver/ftpserver.html">Ftpserver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../databases/databases.html">Databases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drupal/drupal.html">Drupal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../django/django.html">Django</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../github/github.html">Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../backup/backup.html">Backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readthedocs/readthedocs.html">Readthedocs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../raspberrypi/raspberrypi.html">Raspberry Pi</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Sound</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">sdocs</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../index_sdocs.html">sdocs</a> &raquo;</li>
+      
+    <li>Sound</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../../_sources/sdocs/sound/sound.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="sound">
+<h1>Sound<a class="headerlink" href="#sound" title="Permalink to this headline">¶</a></h1>
+<p># Howto Setup Sound</p>
+<div class="section" id="i-prerequisites">
+<h2>I Prerequisites<a class="headerlink" href="#i-prerequisites" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>alsa</li>
+</ul>
+</div>
+<div class="section" id="ii-installation-for-slackware">
+<h2>II Installation for Slackware<a class="headerlink" href="#ii-installation-for-slackware" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>use slackpkg</li>
+<li>use sbopkg</li>
+<li>use SlackBuild scripts</li>
+</ul>
+</div>
+<div class="section" id="iii-configuration">
+<h2>III Configuration<a class="headerlink" href="#iii-configuration" title="Permalink to this headline">¶</a></h2>
+<p># quick setup</p>
+<ul class="simple">
+<li>lsmod | grep snd (check if snd_hda_intel is loaded)</li>
+<li>aplay -l (check sound devices)</li>
+<li>alsamixer</li>
+<li>alsactl store</li>
+<li>kde system setup multimedia</li>
+</ul>
+<p># setup sound <a class="footnote-reference" href="#f1" id="id1">[1]</a></p>
+<ul class="simple">
+<li><a class="reference external" href="http://docs.slackware.com/howtos:hardware:audio_and_snd-hda-intel">http://docs.slackware.com/howtos:hardware:audio_and_snd-hda-intel</a></li>
+</ul>
+<p># global sound configuration</p>
+<div class="highlight-python"><div class="highlight"><pre>alsamixer
+alsactl store
+</pre></div>
+</div>
+<p># special sound configuration</p>
+<div class="highlight-python"><div class="highlight"><pre>echo &quot;options snd-hda-intel model=auto&quot; &gt; /etc/modprobe.d/snd-hda-intel.conf
+</pre></div>
+</div>
+<p># output of aplay -l</p>
+<div class="highlight-python"><div class="highlight"><pre>**** List of PLAYBACK Hardware Devices ****
+card 0: PCH [HDA Intel PCH], device 0: CONEXANT Analog [CONEXANT Analog]
+Subdevices: 1/1
+Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 1: Conexant Digital [Conexant Digital]
+Subdevices: 1/1
+Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 3: HDMI 0 [HDMI 0]
+Subdevices: 1/1
+Subdevice #0: subdevice #0
+</pre></div>
+</div>
+<p class="rubric">footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>see too: /etc/modprobe.d/sound.conf</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../raspberrypi/raspberrypi.html" class="btn btn-neutral" title="Raspberry Pi"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014, Jeffrey Scherling.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.1.alpha',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
