@@ -9,5 +9,9 @@ Webserver
 
         nginx/nginx 
 
+# another nice things
++ squid (with caching)
++ zope (python server)
+
 .. add directory/content.rst here
 

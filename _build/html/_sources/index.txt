@@ -22,17 +22,18 @@ Contents
 
 ToDo
 ----
-+ setup ftp for public use
-+ send link to photos
 
 + setup phpPgAmdin 
 + setup postgresql
 + setup gunicorn 
 + setup django
 
-+ setup mini server
++ setup mini server for backup
 + setup mutt and sendmail
 + read root mail from rsnapshot
++ setup webdav, owncloud
++ setup drupal 6 and 7 website relaunch
++ setup raspberry pi for mini ftp-, media- and webserver
 
 
 Done
@@ -42,6 +43,8 @@ Done
 + setup git
 + setup ftpserver
 + setup readthedocs
++ setup ftp for public use
++ send link to photos
 
 
 Indices and tables

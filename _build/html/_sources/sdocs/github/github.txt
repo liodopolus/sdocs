@@ -59,6 +59,14 @@ III Configuration
 IV How to use it
 ----------------
 
+# if every thing works and content changed you do mostly these steps
+
++ git status
++ git add --all
++ git commit -m "commit"
++ git push
+
+
 # simple howtos
 
 + http://githowto.com/setup
