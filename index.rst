@@ -28,6 +28,7 @@ ToDo
 + setup gunicorn 
 + setup django
 
++ setup minidlna
 + setup mini server for backup
 + setup mutt and sendmail
 + read root mail from rsnapshot

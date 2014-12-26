@@ -12,6 +12,7 @@ sdocs
         ../sphinx/sphinx
         ../webserver/webserver
         ../ftpserver/ftpserver
+        ../webdav/webdav
         ../databases/databases
         ../drupal/drupal
         ../django/django
@@ -20,7 +21,6 @@ sdocs
         ../readthedocs/readthedocs
         ../raspberrypi/raspberrypi
         ../sound/sound
-
 
 .. add directory/content.rst here
 
