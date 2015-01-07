@@ -22,13 +22,10 @@ Contents
 
 ToDo
 ----
-
 + setup phpPgAmdin 
 + setup postgresql
 + setup gunicorn 
 + setup django
-
-+ setup minidlna
 + setup mini server for backup
 + setup mutt and sendmail
 + read root mail from rsnapshot
@@ -39,13 +36,13 @@ ToDo
 
 Done
 ----
++ setup minidlna
 + setup mysqldumper
 + setup rsnapshot
 + setup git
 + setup ftpserver
 + setup readthedocs
 + setup ftp for public use
-+ send link to photos
 
 
 Indices and tables
