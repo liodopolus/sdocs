@@ -15,12 +15,10 @@ I Prerequisites
 + login on github
 
 
-II Installation for Slackware
------------------------------
+II Installation
+---------------
 
-+ use slackpkg
-+ use sbopkg
-+ use SlackBuild scripts
++ not necessary
 
 
 III Configuration

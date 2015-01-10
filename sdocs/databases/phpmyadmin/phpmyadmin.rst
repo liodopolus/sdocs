@@ -1,24 +1,40 @@
 PHPmyadmin
 ==========
 
-
 # Howto Setup PHPmyadmin
 
+
 I Prerequisites
+---------------
 
-1. phpmyadmin-4.2.11-noarch-1js.txz
++ databank mariadb or mysql
++ webserver with php enabled
++ phpmyadmin-4.2.11-noarch-1js.txz
 
 
-II Installation for Slackware
+II Installation
+---------------
 
-1. use slackpkg
-2. use sbopkg
-3. use SlackBuild scripts
+# Basic Steps
+
++ check mariadb
++ check webserver configuration with php (fastcgi, info.php)
++ set permissions of php sessions save path to webserver's user:group and 770 (grep session.save.path /etc/httpd/php.ini ; e.g. /var/lib/php)
++ install phpmyadmin
++ set permissions of phpmyadmin to webserver user:group (see nginx.conf, fastcgi.conf)
++ mkdir config && chmod o+rw && set permission according to the webserver
++ check setup url http://phpmyadmin/setup
+ 
 
 III Configuration
+-----------------
 
-Setup: http://wiki.phpmyadmin.net/pma/Setup
-Quick-Install: http://wiki.phpmyadmin.net/pma/Quick_Install
+# basic steps
+
++ go to and follow the steps http://phpmyadmin/setup
+
+
+# manual steps
 
 1. cd phpMyAdmin
 2. mkdir config                        # create directory for saving
@@ -32,4 +48,8 @@ Quick-Install: http://wiki.phpmyadmin.net/pma/Quick_Install
 10. login with root login and password
 11. start adminstration
 
+
++ quick-setup: http://wiki.phpmyadmin.net/pma/Setup
++ quick-install: http://wiki.phpmyadmin.net/pma/Quick_Install
++ docs-config: http://docs.phpmyadmin.net/en/latest/config.html
 

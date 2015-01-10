@@ -9,6 +9,7 @@ sdocs
 .. toctree::
         :maxdepth: 3
 
+        ../slackware/slackware
         ../sphinx/sphinx
         ../webserver/webserver
         ../ftpserver/ftpserver
