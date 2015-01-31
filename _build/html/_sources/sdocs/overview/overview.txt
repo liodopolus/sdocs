@@ -1,4 +1,4 @@
-Overview
+overview
 --------
 
 .. |date| date::
@@ -11,14 +11,14 @@ Overview
  | # You use it at your own risk, and all information is copyrighted by the owner
  | # Most of this Source is written and collected by Jeffrey Scherling [#f1]_
 
-.. seealso:: Google, for the source of these informations.
+.. .. seealso:: 
 .. note:: This document was generated on |date| at |time|.
 
 .. warning::
 
         This work is licensed under a `Creative Commons Attribution-ShareAlike 4.0 International License`_.
 
-.. image:: 80x15.png
+.. image:: ../../_static/80x15.png
         :alt: http://creativecommons.org/licenses/by-sa/4.0/
         :align: right 
         :target: `Creative Commons Attribution-ShareAlike 4.0 International License`_

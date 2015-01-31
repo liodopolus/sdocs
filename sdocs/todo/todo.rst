@@ -1,0 +1,31 @@
+todo
+====
+
+
+toDo
+----
++ setup phpPgAmdin 
++ setup postgresql
++ setup gunicorn 
++ setup django
++ setup mini server for backup
++ setup mutt and sendmail
++ read root mail from rsnapshot
++ setup webdav, owncloud
++ setup drupal 6 website relaunch
++ setup raspberry pi for mini ftp-, media- and webserver
+
+
+done
+----
++ setup drupal 7 website relaunch
++ setup playonlinux
++ setup minidlna
++ setup mysqldumper
++ setup rsnapshot
++ setup git
++ setup ftpserver
++ setup readthedocs
++ setup ftp for public use
+
+

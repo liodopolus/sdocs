@@ -5,6 +5,7 @@ Sphinx
 # a quick start guide
 
 I Prerequisites
+---------------
 
 1. python
 2. sphinx
@@ -12,6 +13,7 @@ I Prerequisites
 
 
 II Build the documentation
+--------------------------
 
 1. enter sphinx-quickstart # create the root directory of documentation
 2. edit conf.py # set the output to your needs
@@ -21,13 +23,23 @@ II Build the documentation
 
 
 III Look at the Documentation
+-----------------------------
 
 1. open index.html with your webbrowser
 2. open projectname.pdf with your pdfviewer
 
 IV Markup
+---------
 
 + markup http://sphinx-doc.org/rest.html
 + links http://sphinx-doc.org/markup/inline.html#ref-role
 + markup code http://sphinx-doc.org/markup/code.html
 + guide http://docs.python-guide.org/en/latest/writing/documentation/
+
+
+V Themes
+--------
+
++ nice themes http://docs.writethedocs.org/tools/sphinx-themes/
+
+

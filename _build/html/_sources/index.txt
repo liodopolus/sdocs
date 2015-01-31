@@ -4,13 +4,13 @@
    contain the root `toctree` directive.
 
 
-Welcome to sdocs!
-=================
+welcome ;-)
+===========
 
-**# sdocs is an akronym for small/simple dokumentation**
+# sdocs is an akronym for small/simple dokumentation
 
 
-Contents
+contents
 --------
 
 .. toctree::
@@ -18,40 +18,22 @@ Contents
 
         sdocs/overview/overview
         sdocs/index/sdocs
+        sdocs/todo/todo
 
 
-ToDo
-----
-+ setup phpPgAmdin 
-+ setup postgresql
-+ setup gunicorn 
-+ setup django
-+ setup mini server for backup
-+ setup mutt and sendmail
-+ read root mail from rsnapshot
-+ setup webdav, owncloud
-+ setup drupal 6 website relaunch
-+ setup raspberry pi for mini ftp-, media- and webserver
+resources
+---------
+
+http://aikidokyritz.de
 
 
-Done
-----
-+ setup drupal 7 website relaunch
-+ setup playonlinux
-+ setup minidlna
-+ setup mysqldumper
-+ setup rsnapshot
-+ setup git
-+ setup ftpserver
-+ setup readthedocs
-+ setup ftp for public use
 
 
-Indices and tables
-------------------
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+..
+        indices/tables
+        --------------
+        * :ref:`genindex`
+        * :ref:`modindex`
+        * :ref:`search`
 
 
