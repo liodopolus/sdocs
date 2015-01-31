@@ -4,18 +4,21 @@ PostgreSQL
 # Howto Setup Postgresql
 
 I Prerequisites
+---------------
 
 1. postgresql-5.1.tar.gz
 2. privileged user only for sql-data
+3. phpPgAdmin (manage tool)
+4. barman (backup tool)
 
 
 II Installation for Slackware
+-----------------------------
 
-1. use slackpkg
-2. use sbopkg
-3. use SlackBuild scripts
++ use sbopkg
 
 III Configuration
+-----------------
 
 1. create database
 
@@ -28,7 +31,16 @@ III Configuration
 .. literalinclude::
         output/console-output-2
 
-4. manage databases with phpPgAdmin
+IV Manage Database
+------------------
+
++ phpPgAdmin
+
+V Backup
+--------
+
++ barman
+
 
 .. phpPgAdmin_link
 
