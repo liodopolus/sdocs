@@ -1,12 +1,11 @@
-root@gamma:~# su amorsql -c "initdb -D /var/lib/pgsql/9.3/data --locale=en_US.UTF-8 -A md5 -W" 
-
+root@host:~# su username -c "initdb -D /var/lib/pgsql/9.3/data --locale=de_DE.UTF-8 -A md5 -W" 
 could not change directory to "/root": Permission denied
-The files belonging to this database system will be owned by user "amorsql".
+The files belonging to this database system will be owned by user "username".
 This user must also own the server process.
 
-The database cluster will be initialized with locale "en_US.UTF-8".
+The database cluster will be initialized with locale "de_DE.UTF-8".
 The default database encoding has accordingly been set to "UTF8".
-The default text search configuration will be set to "english".
+The default text search configuration will be set to "german".
 
 Data page checksums are disabled.
 
@@ -36,10 +35,7 @@ syncing data to disk ... ok
 
 Success. You can now start the database server using:
 
-postgres -D /var/lib/pgsql/9.3/data
+    postgres -D /var/lib/pgsql/9.3/data
 or
-pg_ctl -D /var/lib/pgsql/9.3/data -l logfile start
-
-root@gamma:~#
-
+    pg_ctl -D /var/lib/pgsql/9.3/data -l logfile start
 

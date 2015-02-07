@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Databases &mdash; sdocs</title>
+    <title>timezone &mdash; sdocs</title>
     
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="sdocs" href="../../index.html" />
     <link rel="up" title="sdocs" href="../index/sdocs.html" />
-    <link rel="next" title="MariaDB" href="mariadb/mariadb.html" />
-    <link rel="prev" title="Webdav" href="../webdav/webdav.html" />
+    <link rel="next" title="todo" href="../todo/todo.html" />
+    <link rel="prev" title="Sound" href="../sound/sound.html" />
    
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
@@ -40,10 +40,10 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="mariadb/mariadb.html" title="MariaDB"
+          <a href="../todo/todo.html" title="todo"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../webdav/webdav.html" title="Webdav"
+          <a href="../sound/sound.html" title="Sound"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">sdocs</a> &raquo;</li>
           <li><a href="../index/sdocs.html" accesskey="U">sdocs</a> &raquo;</li> 
@@ -55,36 +55,20 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="databases">
-<h1>Databases<a class="headerlink" href="#databases" title="Permalink to this headline">¶</a></h1>
-<p># configuration of different databeses</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="mariadb/mariadb.html">MariaDB</a></li>
-<li class="toctree-l1"><a class="reference internal" href="phpmyadmin/phpmyadmin.html">PHPmyadmin</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="phpmyadmin/phpmyadmin.html#i-prerequisites">I Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="phpmyadmin/phpmyadmin.html#ii-installation">II Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="phpmyadmin/phpmyadmin.html#iii-configuration">III Configuration</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="mysqldumper/mysqldumper.html">MySQLDumper</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="mysqldumper/mysqldumper.html#i-prerequisites">I Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mysqldumper/mysqldumper.html#ii-installation-for-slackware">II Installation for Slackware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mysqldumper/mysqldumper.html#iii-configuration">III Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mysqldumper/mysqldumper.html#iv-backup">IV Backup</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="postgresql/postgresql.html">PostgreSQL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="postgresql/postgresql.html#i-prerequisites">I Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="postgresql/postgresql.html#ii-installation-for-slackware">II Installation for Slackware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="postgresql/postgresql.html#iii-configuration">III Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="postgresql/postgresql.html#iv-manage-database">IV Manage Database</a></li>
-<li class="toctree-l2"><a class="reference internal" href="postgresql/postgresql.html#v-backuptools">V Backuptools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="postgresql/postgresql.html#postgresql-backup">Postgresql Backup</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="phpPgAdmin/phpPgAdmin.html">phpPgAdmin</a></li>
-</ul>
+  <div class="section" id="timezone">
+<h1>timezone<a class="headerlink" href="#timezone" title="Permalink to this headline">¶</a></h1>
+<p># how to setup the timezone</p>
+<p>change timezone:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">timeconfig</span>
+</pre></div>
+</div>
+<p>sync time with server:</p>
+<div class="highlight-python"><div class="highlight"><pre>ntpdate pool.ntp.org
+</pre></div>
+</div>
+<p>write to hardware clock:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">hwclock</span> <span class="o">-</span><span class="n">w</span>
+</pre></div>
 </div>
 </div>
 
@@ -140,7 +124,7 @@
       &copy;2015, Jeffrey Scherling.
       
       |
-      <a href="../../_sources/sdocs/databases/databases.txt"
+      <a href="../../_sources/sdocs/timezone/timezone.txt"
           rel="nofollow">Page source</a></li>
     </div>
 

@@ -125,7 +125,9 @@ html_theme_options = {
 	'logo': 'sdocs-by-Jeff.png',
 	'github_user': 'liodopolus',
 	'github_repo': 'sdocs',
+	'show_powered_by': 'false',
 }
+
 
 # standard options
 #html_theme_options = {

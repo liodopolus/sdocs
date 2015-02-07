@@ -65,7 +65,7 @@
 <li>postgresql-5.1.tar.gz</li>
 <li>privileged user only for sql-data</li>
 <li>phpPgAdmin (manage tool)</li>
-<li>barman (backup tool)</li>
+<li>barman (optional backup tool)</li>
 </ol>
 </div>
 <div class="section" id="ii-installation-for-slackware">
@@ -77,17 +77,19 @@
 <div class="section" id="iii-configuration">
 <h2>III Configuration<a class="headerlink" href="#iii-configuration" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>create database</li>
+<li>create user with username, give him a passwd and make sure to log in homedir /var/lib/pgsql/</li>
+<li>create group with username or other</li>
+<li>change permissions of /var/lib/pgsql/ to chown -R username:username</li>
+<li>create database: su username -c &#8220;initdb -D /var/lib/pgsql/9.3/data &#8211;locale=de_DE.UTF-8 -A md5 -W&#8221;</li>
 </ol>
-<div class="highlight-python"><div class="highlight"><pre>root@gamma:~# su amorsql -c &quot;initdb -D /var/lib/pgsql/9.3/data --locale=en_US.UTF-8 -A md5 -W&quot; 
-
+<div class="highlight-python"><div class="highlight"><pre>root@host:~# su username -c &quot;initdb -D /var/lib/pgsql/9.3/data --locale=de_DE.UTF-8 -A md5 -W&quot; 
 could not change directory to &quot;/root&quot;: Permission denied
-The files belonging to this database system will be owned by user &quot;amorsql&quot;.
+The files belonging to this database system will be owned by user &quot;username&quot;.
 This user must also own the server process.
 
-The database cluster will be initialized with locale &quot;en_US.UTF-8&quot;.
+The database cluster will be initialized with locale &quot;de_DE.UTF-8&quot;.
 The default database encoding has accordingly been set to &quot;UTF8&quot;.
-The default text search configuration will be set to &quot;english&quot;.
+The default text search configuration will be set to &quot;german&quot;.
 
 Data page checksums are disabled.
 
@@ -117,22 +119,19 @@ syncing data to disk ... ok
 
 Success. You can now start the database server using:
 
-postgres -D /var/lib/pgsql/9.3/data
+    postgres -D /var/lib/pgsql/9.3/data
 or
-pg_ctl -D /var/lib/pgsql/9.3/data -l logfile start
-
-root@gamma:~#
+    pg_ctl -D /var/lib/pgsql/9.3/data -l logfile start
 </pre></div>
 </div>
-<ol class="arabic simple" start="2">
-<li>start the database</li>
-<li>change user and group to what you set, edit rc.postgresql</li>
+<ol class="arabic simple" start="5">
+<li>change username and group in rc.postgresql</li>
+<li>start the database: /etc/rc.d/rc.postgresql start</li>
 </ol>
-<div class="highlight-python"><div class="highlight"><pre>root@gamma:~# /etc/rc.d/rc.postgresql start
+<div class="highlight-python"><div class="highlight"><pre>root@host:~# /etc/rc.d/rc.postgresql start 
 Starting PostgreSQL
 waiting for server to start.... done
 server started
-root@gamma:~#
 </pre></div>
 </div>
 </div>
@@ -141,12 +140,26 @@ root@gamma:~#
 <ul class="simple">
 <li>phpPgAdmin</li>
 </ul>
+<p># login with the privileged user above in phpPgAdmin</p>
 </div>
-<div class="section" id="v-backup">
-<h2>V Backup<a class="headerlink" href="#v-backup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="v-backuptools">
+<h2>V Backuptools<a class="headerlink" href="#v-backuptools" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li>pg_dump</li>
 <li>barman</li>
 </ul>
+</div>
+<div class="section" id="postgresql-backup">
+<h2>Postgresql Backup<a class="headerlink" href="#postgresql-backup" title="Permalink to this headline">¶</a></h2>
+<p>see: <a class="reference external" href="http://www.postgresql.org/docs/9.4/static/backup-dump.html">http://www.postgresql.org/docs/9.4/static/backup-dump.html</a></p>
+<p># dump db
+pg_dump dbname &gt; outfile</p>
+<p># reload db
+psql dbname &lt; infile</p>
+<p># dump large db
+pg_dump dbname | gzip &gt; filename.gz</p>
+<p># reload
+gunzip -c filename.gz | psql dbname</p>
 </div>
 </div>
 
@@ -200,10 +213,6 @@ root@gamma:~#
     </div>
     <div class="footer">
       &copy;2015, Jeffrey Scherling.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.2.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster </a>
       
       |
       <a href="../../../_sources/sdocs/databases/postgresql/postgresql.txt"
