@@ -4,7 +4,7 @@ todo
 
 toDo
 ----
-+ setup gunicorn !!!
++ write rc.gunicorn 
 + setup django !!!
 
 + write translate python module howto "for polish translate -t pl -f de nein"  see: https://github.com/terryyin/google-translate-python
@@ -24,6 +24,7 @@ toDo
 
 done
 ----
++ setup gunicorn
 + setup wireshark a network analyze tool
 + setup kde lokalize
 + setup translate a python google translate module for the shell 
