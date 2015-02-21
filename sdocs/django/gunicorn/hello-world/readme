@@ -1,0 +1,21 @@
+# howto start a python app with gunicorn
+# http://gunicorn.org/#quickstart
+
+# 1. way gunicorn howto
+gunicorn -w 4 hello:app
+
+# 2. way
+gunicorn hello:app -b localhost:8000
+
+# 3. way
+gunicorn --workers=2 hello:app
+
+# 4. way
+gunicorn hello:app
+
+# look at 
+http://localhost:8000/
+
+# or
+http://127.0.0.1:8000
+
