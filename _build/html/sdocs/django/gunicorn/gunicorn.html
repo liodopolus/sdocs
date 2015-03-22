@@ -65,8 +65,10 @@
 <ul class="simple">
 <li>python</li>
 <li>nginx</li>
+<li>postgresql</li>
+<li>phpPgAdmin</li>
 <li>gunicorn</li>
-<li>django (optional)</li>
+<li>django</li>
 </ul>
 </div>
 <div class="section" id="ii-quickstart">
@@ -130,7 +132,7 @@ http://127.0.0.1:8000
 <div class="section" id="ii-configuration">
 <h2>II Configuration<a class="headerlink" href="#ii-configuration" title="Permalink to this headline">¶</a></h2>
 <p># howto configure nginx for gunicorn
-<a class="reference external" href="http://docs.gunicorn.org/en/latest/deploy.html">http://docs.gunicorn.org/en/latest/deploy.html</a></p>
+<a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-django-with-postgres-nginx-and-gunicorn">https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-django-with-postgres-nginx-and-gunicorn</a></p>
 <p># nginx global config</p>
 <div class="highlight-python"><div class="highlight"><pre># user (should be a non privilleged)
 user	amorsql amorsql; # user and group of processes
@@ -209,6 +211,43 @@ server {
 }
 </pre></div>
 </div>
+<p># here you can find startscripts at bottom if needed (see next point)
+<a class="reference external" href="http://docs.gunicorn.org/en/latest/deploy.html">http://docs.gunicorn.org/en/latest/deploy.html</a></p>
+</div>
+<div class="section" id="iv-running-djangoprojects">
+<h2>IV Running Djangoprojects<a class="headerlink" href="#iv-running-djangoprojects" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>create a django project::</dt>
+<dd><p class="first last">django-admin.py startproject mysite</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">create a database in postgresql (more stable as other databases) use phpPgAdmin</p>
+</li>
+<li><p class="first">change database setting in settings.py</p>
+</li>
+<li><dl class="first docutils">
+<dt>sync database and create the superuser for the djangoproject::</dt>
+<dd><p class="first last">python manage.py syncdb</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>the most important ;-) start and test your application with gunicorn::</dt>
+<dd><p class="first last">gunicorn mysite.wsgi:application</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>see: <a class="reference external" href="https://docs.djangoproject.com/en/1.4/howto/deployment/wsgi/gunicorn/">https://docs.djangoproject.com/en/1.4/howto/deployment/wsgi/gunicorn/</a>
+6. create an app:</p>
+<div class="highlight-python"><div class="highlight"><pre>python manage.py startapp [appname]
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li>etc.</li>
+</ol>
 </div>
 </div>
 

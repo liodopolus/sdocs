@@ -23,6 +23,7 @@ sdocs
         ../raspberrypi/raspberrypi
         ../sound/sound
         ../timezone/timezone
+        ../mount/mount
 
 .. add directory/content.rst here
 
