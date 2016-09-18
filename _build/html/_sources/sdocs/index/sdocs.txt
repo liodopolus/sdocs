@@ -24,6 +24,7 @@ sdocs
         ../sound/sound
         ../timezone/timezone
         ../mount/mount
+        ../colors/colors
 
 .. add directory/content.rst here
 
