@@ -9,22 +9,23 @@ sdocs
 .. toctree::
         :maxdepth: 3
 
-        ../slackware/slackware
-        ../sphinx/sphinx
-        ../webserver/webserver
-        ../ftpserver/ftpserver
-        ../webdav/webdav
-        ../databases/databases
-        ../drupal/drupal
-        ../django/django
-        ../github/github
         ../backup/backup
-        ../readthedocs/readthedocs
-        ../raspberrypi/raspberrypi
-        ../sound/sound
-        ../timezone/timezone
-        ../mount/mount
         ../colors/colors
+        ../databases/databases
+        ../django/django
+        ../drupal/drupal
+        ../ftpserver/ftpserver
+        ../github/github
+        ../mount/mount
+        ../passwordmanager/passwordmanager
+        ../raspberrypi/raspberrypi
+        ../readthedocs/readthedocs
+        ../slackware/slackware
+        ../sound/sound
+        ../sphinx/sphinx
+        ../timezone/timezone
+        ../webdav/webdav
+        ../webserver/webserver
 
 .. add directory/content.rst here
 
